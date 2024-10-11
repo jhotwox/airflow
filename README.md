@@ -57,4 +57,24 @@ task_1 >> task_2 >> task_3
 ```
 
 # Resultados
-<img src="">
+>Al presionar el boton "Trigger DAG podemos observar en la parte izquierda el estado de ejecución y al dar click a la tarea "fetch_data" podemos observar información especifica sobre esa tarea"
+><img src="https://github.com/jhotwox/airflow/blob/main/2024-10-11_151526.png?raw=true">
+
+>Tarea "get_temperature"
+><img src="https://github.com/jhotwox/airflow/blob/main/2024-10-11_151548.png?raw=true">
+>Logs "get_temperature" para observar la información que retorna la tarea
+><img src="https://github.com/jhotwox/airflow/blob/main/2024-10-11_151637.png?raw=true">
+
+
+>Tarea "check_temperature"
+><img src="https://github.com/jhotwox/airflow/blob/main/2024-10-11_151626.png?raw=true">
+>Logs "check_temperature" para observar la información que retorna la tarea
+><img src="https://github.com/jhotwox/airflow/blob/main/2024-10-11_151645.png?raw=true">
+
+#### Alerta
+>Si forzamos que get_temperature retorne un valor mayor a 45 podemos observar la alerta
+><img src="https://github.com/jhotwox/airflow/blob/main/2024-10-11_152033.png?raw=true">
+
+#### Error
+>Si forzamos un error en el fetch de datos podemos observar que la tarea fallo
+><img src="https://github.com/jhotwox/airflow/blob/main/2024-10-11_153330.png?raw=true">
